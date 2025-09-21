@@ -1,32 +1,28 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+/* Custom colors and styles */
+.navbar-brand {
+    font-weight: 700;
 }
 
-section {
-    padding: 2rem;
-    margin: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.nav-link {
+    font-weight: 500;
 }
 
-.project-item {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.progress-bar {
+    background-color: #0d6efd !important; /* Bootstrap's primary color */
 }
 
-/* Add more CSS to style your sections, fonts, and layout. */
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
