@@ -1,283 +1,108 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Advanced Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Urjita Mane — Computer Engineering Student</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:32px auto;padding:0 18px;line-height:1.6;color:#111}
+    header{border-bottom:1px solid #e9e9e9;padding-bottom:12px;margin-bottom:18px}
+    h1{margin:0;font-size:1.6rem}
+    .muted{color:#555;font-size:.95rem}
+    section{margin-top:18px}
+    .skills span{display:inline-block;background:#f3f3f3;padding:6px 10px;border-radius:16px;margin:6px 6px 0 0;font-size:.9rem}
+    .project{margin-bottom:12px}
+    a.button{display:inline-block;padding:8px 12px;border-radius:6px;border:1px solid #222;text-decoration:none;margin-top:10px}
+    footer{margin-top:30px;font-size:.9rem;color:#444;border-top:1px solid #eee;padding-top:12px}
+    ul.nostyle{padding-left:0;list-style:none}
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Urjita Mane</h1>
+    <div class="muted">3rd Year B.E. Computer Engineering • Aspiring Full Stack Developer • Internship Seeker</div>
+    <div style="margin-top:8px;font-size:.95rem">
+      <strong>Location:</strong> Pune, Maharashtra, India &nbsp; • &nbsp;
+      <strong>Email:</strong> <a href="mailto:urjitamane@gmail.com">urjitamane@gmail.com</a> &nbsp; • &nbsp;
+      <strong>Phone:</strong> +91 8010696256
+    </div>
+    <div style="margin-top:6px"><a href="https://www.linkedin.com/in/urjita-0908-mane" target="_blank">LinkedIn</a></div>
+  </header>
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Your Name</a>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+  <section>
+    <h2>About</h2>
+    <p>I am a Third‑Year Computer Engineering student with a strong foundation in Information Technology (MSBTE Diploma: 83%) and hands‑on experience in web development, IoT, and software development. I have authored a research publication, built practical projects, and am eager to contribute to software projects and internships that help me grow technically and professionally.</p>
+  </section>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <p>Hello, I'm</p>
-                <h1>Your Name</h1>
-                <h2 class="dynamic-text"></h2>
-                <a href="#projects" class="btn primary-btn">View My Work</a>
-                <div class="social-links">
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/images/profile.jpg" alt="Your Profile Picture">
-            </div>
-        </div>
-    </section>
+  <section>
+    <h2>Skills & Tools</h2>
+    <div class="skills">
+      <span>Data Structures</span><span>Web Development</span><span>Java</span><span>Red Hat Linux</span><span>Algorithms</span>
+    </div>
+  </section>
 
-    <section id="about" class="about section-padding">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>
-                    Passionate and dedicated [Your Profession/Student Status, e.g., "Full Stack Developer", "Computer Engineering student"] with a strong foundation in [mention key areas, e.g., "web development, data structures, and algorithms"]. I thrive on solving complex problems and building efficient, scalable applications. My journey in tech is driven by curiosity and a desire to create impactful solutions.
-                </p>
-                <p>
-                    I'm constantly exploring new technologies and frameworks to enhance my skills. When I'm not coding, you can find me [mention a hobby, e.g., "reading sci-fi novels," "hiking," "playing guitar"]. I'm currently seeking [mention what you're looking for, e.g., "a challenging internship opportunity" or "a full-time role"].
-                </p>
-                <a href="assets/Your_Resume.pdf" download class="btn outline-btn">Download Resume <i class="fas fa-download"></i></a>
-            </div>
-        </div>
-    </section>
+  <section>
+    <h2>Selected Projects</h2>
+    <div class="project">
+      <strong>Tic Tac Toe (Java)</strong><br/>
+      Console-based 3×3 board game with win/draw logic and input handling. Checks rows, columns, and diagonals for victory.
+    </div>
+    <div class="project">
+      <strong>N‑Queens (Java, Backtracking)</strong><br/>
+      Recursive backtracking solution that finds and prints all valid placements of N queens on an N×N board.
+    </div>
+    <div class="project">
+      <strong>Sudoku Solver (Java)</strong><br/>
+      Solver using backtracking and constraint checking for a 9×9 Sudoku puzzle.
+    </div>
+    <div class="project">
+      <strong>Cinema Booking System (Publication / Project)</strong><br/>
+      Published project — cinema booking system (details available on request).
+    </div>
+  </section>
 
-    <section id="skills" class="skills section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-item">
-                        <span>JavaScript</span>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar" data-progress="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Python</span>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar" data-progress="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Java</span>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar" data-progress="80"></div>
-                        </div>
-                    </div>
-                </div>
+  <section>
+    <h2>Experience</h2>
+    <p><strong>Student Intern — Infeanet Digital Solution and Web Media</strong><br/>
+    June 2023 – July 2023 (2 months) • Pune, Maharashtra</p>
+    <p>Gained hands‑on experience in core Java programming, developer tools, and coding exercises. Built small projects and improved problem‑solving and teamwork skills under mentor guidance.</p>
+  </section>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-globe"></i> Web Technologies</h3>
-                    <div class="skill-item">
-                        <span>HTML5 & CSS3</span>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar" data-progress="95"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>React.js</span>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar" data-progress="75"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Node.js & Express.js</span>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar" data-progress="70"></div>
-                        </div>
-                    </div>
-                </div>
+  <section>
+    <h2>Education</h2>
+    <ul class="nostyle">
+      <li><strong>B.E. Computer Engineering</strong> — Shalaka Foundations Keystone School of Engineering, Pune (June 2024 – June 2027)</li>
+      <li><strong>Diploma in Information Technology</strong> — AISSMS Polytechnic (2021 – June 2024)</li>
+      <li><strong>ICSE</strong> — St Helena's School (June 2010 – March 2021)</li>
+    </ul>
+  </section>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Databases</h3>
-                    <div class="skill-item">
-                        <span>MySQL</span>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar" data-progress="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>MongoDB</span>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar" data-progress="70"></div>
-                        </div>
-                    </div>
-                </div>
+  <section>
+    <h2>Certifications & Awards</h2>
+    <ul>
+      <li>Introduction to Web Development</li>
+      <li>Management & Leadership Course</li>
+      <li>Getting Started with Linux</li>
+      <li>Fundamentals (RH104)</li>
+      <li>Basic Microsoft Excel Training</li>
+      <li>Workshop on LORA-Based IoT-Enabled Smart Light Systems for Smart Cities</li>
+    </ul>
+    <p><strong>Honors:</strong> Blind Coding Event, Technical Funfair</p>
+  </section>
 
-                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
-                    <div class="skill-item">
-                        <span>Git & GitHub</span>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar" data-progress="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>VS Code</span>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar" data-progress="95"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>RESTful APIs</span>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar" data-progress="85"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section>
+    <h2>Publications</h2>
+    <p><strong>Cinema Booking System</strong> — Project / publication listed on resume.</p>
+  </section>
 
-    <section id="projects" class="projects section-padding">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-                <button class="filter-btn" data-filter="data">Data Science</button>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card" data-category="web">
-                    <img src="assets/images/project1.jpg" alt="Project 1">
-                    <div class="card-content">
-                        <h3>E-commerce Store</h3>
-                        <p>A full-stack e-commerce platform built with MERN stack, featuring user authentication, product catalog, and payment integration.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="web">
-                    <img src="assets/images/project2.jpg" alt="Project 2">
-                    <div class="card-content">
-                        <h3>Portfolio Website</h3>
-                        <p>A personal portfolio showcasing skills, projects, and contact information. Developed using HTML, CSS, and JavaScript.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                 <div class="project-card" data-category="data">
-                    <img src="assets/images/project3.jpg" alt="Project 3">
-                    <div class="card-content">
-                        <h3>Data Analysis Dashboard</h3>
-                        <p>Interactive dashboard built with Python and Plotly to visualize customer behavior data and sales trends.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-        </div>
-    </section>
+  <section style="margin-top:20px">
+    <a class="button" href="resume.pdf" target="_blank">Download Resume (PDF)</a>
+    <a class="button" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub (replace with your username)</a>
+  </section>
 
-    <section id="experience" class="experience section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title">Experience & Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon"></div>
-                    <div class="timeline-content">
-                        <h3>B.E. in Computer Engineering</h3>
-                        <p class="institution">Savitribai Phule Pune University (SPPU)</p>
-                        <span class="date">2021 - Present</span>
-                        <p>Currently pursuing my Bachelor's degree with a focus on software development, data structures, and algorithms.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon"></div>
-                    <div class="timeline-content">
-                        <h3>Software Developer Intern</h3>
-                        <p class="institution">Tech Solutions Inc.</p>
-                        <span class="date">Jan 2023 - Jun 2023</span>
-                        <p>Developed and maintained features for a customer relationship management (CRM) application using React and Node.js. Collaborated with a team of 5 engineers.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon"></div>
-                    <div class="timeline-content">
-                        <h3>Diploma in Information Technology</h3>
-                        <p class="institution">AISSMS Polytechnic, Pune</p>
-                        <span class="date">2018 - 2021</span>
-                        <p>Completed a diploma with distinction, gaining fundamental knowledge in IT concepts and programming.</p>
-                    </div>
-                </div>
-                </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact section-padding">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="contact-description">I'm always open to new opportunities and collaborations. Feel free to send me a message!</p>
-            <div class="contact-form-container">
-                <form id="contactForm" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                        <div class="error-message"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                        <div class="error-message"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                        <div class="error-message"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                        <div class="error-message"></div>
-                    </div>
-                    <button type="submit" class="btn primary-btn">Send Message</button>
-                    <div id="form-status" class="form-status"></div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-            <div class="footer-social-links">
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-
-    <script src="script.js"></script>
+  <footer>
+    <p>Site generated from the uploaded resume. Edit <code>index.html</code> to tweak content, add GitHub repo links, or swap colors.</p>
+  </footer>
 </body>
 </html>
