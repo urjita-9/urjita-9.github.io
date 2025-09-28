@@ -1,108 +1,341 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Urjita Mane — Computer Engineering Student</title>
-  <style>
-    body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:32px auto;padding:0 18px;line-height:1.6;color:#111}
-    header{border-bottom:1px solid #e9e9e9;padding-bottom:12px;margin-bottom:18px}
-    h1{margin:0;font-size:1.6rem}
-    .muted{color:#555;font-size:.95rem}
-    section{margin-top:18px}
-    .skills span{display:inline-block;background:#f3f3f3;padding:6px 10px;border-radius:16px;margin:6px 6px 0 0;font-size:.9rem}
-    .project{margin-bottom:12px}
-    a.button{display:inline-block;padding:8px 12px;border-radius:6px;border:1px solid #222;text-decoration:none;margin-top:10px}
-    footer{margin-top:30px;font-size:.9rem;color:#444;border-top:1px solid #eee;padding-top:12px}
-    ul.nostyle{padding-left:0;list-style:none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urjita Mane | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Urjita Mane</h1>
-    <div class="muted">3rd Year B.E. Computer Engineering • Aspiring Full Stack Developer • Internship Seeker</div>
-    <div style="margin-top:8px;font-size:.95rem">
-      <strong>Location:</strong> Pune, Maharashtra, India &nbsp; • &nbsp;
-      <strong>Email:</strong> <a href="mailto:urjitamane@gmail.com">urjitamane@gmail.com</a> &nbsp; • &nbsp;
-      <strong>Phone:</strong> +91 8010696256
-    </div>
-    <div style="margin-top:6px"><a href="https://www.linkedin.com/in/urjita-0908-mane" target="_blank">LinkedIn</a></div>
-  </header>
 
-  <section>
-    <h2>About</h2>
-    <p>I am a Third‑Year Computer Engineering student with a strong foundation in Information Technology (MSBTE Diploma: 83%) and hands‑on experience in web development, IoT, and software development. I have authored a research publication, built practical projects, and am eager to contribute to software projects and internships that help me grow technically and professionally.</p>
-  </section>
+    <nav class="navbar">
+        <div class="nav-content">
+            <span class="nav-name">Urjita Mane</span>
+            <div class="nav-links">
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#certificates">Certificates</a>
+                <a class="nav-link" href="#publications">Publications</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#contact">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
 
-  <section>
-    <h2>Skills & Tools</h2>
-    <div class="skills">
-      <span>Data Structures</span><span>Web Development</span><span>Java</span><span>Red Hat Linux</span><span>Algorithms</span>
-    </div>
-  </section>
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hi, I'm</p>
+                <h1>Urjita Mane</h1>
+                <p class="tagline">Aspiring Developer & Problem Solver</p>
+                
+                <div class="social-links-grid">
+                    <a href="https://www.linkedin.com/in/urjita-0908-mane/" target="_blank" class="social-link-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="link-name">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/urjita-9" target="_blank" class="social-link-item">
+                        <i class="fab fa-github"></i>
+                        <span class="link-name">GitHub</span>
+                    </a>
+                    <a href="https://leetcode.com/u/Urjita_0908/" target="_blank" class="social-link-item">
+                        <i class="fas fa-code"></i>
+                        <span class="link-name">LeetCode</span>
+                    </a> 
+                    <a href="https://www.codechef.com/users/urjita_0908" target="_blank" class="social-link-item">
+                        <i class="fas fa-terminal"></i>
+                        <span class="link-name">CodeChef</span>
+                    </a>
+                    <a href="https://www.hackerrank.com/profile/urjitamane" target="_blank" class="social-link-item">
+                        <i class="fab fa-hackerrank"></i>
+                        <span class="link-name">HackerRank</span>
+                    </a> 
+                </div>
+            </div>
+            <div class="hero-photo-container">
+                <img src="assets/images/profile.png" alt="Urjita Mane Profile Photo" class="profile-image-square">
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="list-container skills-group-grid">
 
-  <section>
-    <h2>Selected Projects</h2>
-    <div class="project">
-      <strong>Tic Tac Toe (Java)</strong><br/>
-      Console-based 3×3 board game with win/draw logic and input handling. Checks rows, columns, and diagonals for victory.
-    </div>
-    <div class="project">
-      <strong>N‑Queens (Java, Backtracking)</strong><br/>
-      Recursive backtracking solution that finds and prints all valid placements of N queens on an N×N board.
-    </div>
-    <div class="project">
-      <strong>Sudoku Solver (Java)</strong><br/>
-      Solver using backtracking and constraint checking for a 9×9 Sudoku puzzle.
-    </div>
-    <div class="project">
-      <strong>Cinema Booking System (Publication / Project)</strong><br/>
-      Published project — cinema booking system (details available on request).
-    </div>
-  </section>
+            <div class="skill-group-card">
+                <h3>Frontend Development</h3>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">HTML & CSS</span>
+                    <span class="sub-skill-percent">95%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">JavaScript</span>
+                    <span class="sub-skill-percent">80%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">React</span>
+                    <span class="sub-skill-percent">75%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">Tailwind CSS / Bootstrap</span>
+                    <span class="sub-skill-percent">80%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-group-card">
+                <h3>Backend & Database</h3>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">Python (Flask/Django)</span>
+                    <span class="sub-skill-percent">70%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">Node.js / Express</span>
+                    <span class="sub-skill-percent">75%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">SQL (MySQL/PLSQL)</span>
+                    <span class="sub-skill-percent">80%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">MongoDB</span>
+                    <span class="sub-skill-percent">70%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
 
-  <section>
-    <h2>Experience</h2>
-    <p><strong>Student Intern — Infeanet Digital Solution and Web Media</strong><br/>
-    June 2023 – July 2023 (2 months) • Pune, Maharashtra</p>
-    <p>Gained hands‑on experience in core Java programming, developer tools, and coding exercises. Built small projects and improved problem‑solving and teamwork skills under mentor guidance.</p>
-  </section>
+            <div class="skill-group-card">
+                <h3>Core Concepts & DSA</h3>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">Data Structures</span>
+                    <span class="sub-skill-percent">85%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">Algorithms</span>
+                    <span class="sub-skill-percent">80%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">Object-Oriented Programming</span>
+                    <span class="sub-skill-percent">90%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
 
-  <section>
-    <h2>Education</h2>
-    <ul class="nostyle">
-      <li><strong>B.E. Computer Engineering</strong> — Shalaka Foundations Keystone School of Engineering, Pune (June 2024 – June 2027)</li>
-      <li><strong>Diploma in Information Technology</strong> — AISSMS Polytechnic (2021 – June 2024)</li>
-      <li><strong>ICSE</strong> — St Helena's School (June 2010 – March 2021)</li>
-    </ul>
-  </section>
+            <div class="skill-group-card">
+                <h3>Tools & Technologies</h3>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">Git & GitHub</span>
+                    <span class="sub-skill-percent">85%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="sub-skill-item">
+                    <span class="sub-skill-name">VS Code / IDEs</span>
+                    <span class="sub-skill-percent">90%</span>
+                    <div class="sub-skill-bar-container">
+                        <div class="sub-skill-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
 
-  <section>
-    <h2>Certifications & Awards</h2>
-    <ul>
-      <li>Introduction to Web Development</li>
-      <li>Management & Leadership Course</li>
-      <li>Getting Started with Linux</li>
-      <li>Fundamentals (RH104)</li>
-      <li>Basic Microsoft Excel Training</li>
-      <li>Workshop on LORA-Based IoT-Enabled Smart Light Systems for Smart Cities</li>
-    </ul>
-    <p><strong>Honors:</strong> Blind Coding Event, Technical Funfair</p>
-  </section>
+        </div>
+    </section>
 
-  <section>
-    <h2>Publications</h2>
-    <p><strong>Cinema Booking System</strong> — Project / publication listed on resume.</p>
-  </section>
+    <section id="certificates" class="section alt-bg">
+        <h2 class="section-title">Certificates</h2>
+        <div class="list-container">
+            
+            <a href="assets/apnacollege.pdf" target="_blank" class="list-item cert-item-link">
+                <div class="cert-details">
+                    <span class="cert-title">Full Stack Web Developement</span>
+                    <span class="cert-issuer">Apna College | 2024</span>
+                </div>
+                <div class="cert-link-button">Open <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            
+            <a href="assets/research_cert.pdf" target="_blank" class="list-item cert-item-link">
+                <div class="cert-details">
+                    <span class="cert-title">Published a research paper entitled “Cinema Booking System" </span>
+                    <span class="cert-issuer">IJIRCCE | 2024</span>
+                </div>
+                <div class="cert-link-button">Open <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            
+            <a href="assets/implementation_cert.pdf" target="_blank" class="list-item cert-item-link">
+                 <div class="cert-details">
+                    <span class="cert-title">Published an implementaion paper entitled “Cinema Booking System"</span>
+                    <span class="cert-issuer">IJRPR | 2024</span>
+                </div>
+                <div class="cert-link-button">Open <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            
+            <a href="assets/redhat_linux.pdf" target="_blank" class="list-item cert-item-link">
+                <div class="cert-details">
+                    <span class="cert-title">Getting Started with Linux Fundamentals (RH104)</span>
+                    <span class="cert-issuer">RedHat | 2024</span>
+                </div>
+                <div class="cert-link-button">Open <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            
+            <a href="assets/infosys_mngt_leadership.pdf" target="_blank" class="list-item cert-item-link">
+                <div class="cert-details">
+                    <span class="cert-title"> Successfully completing the course Management & Leadership</span>
+                    <span class="cert-issuer">Infosys | 2024</span>
+                </div>
+                <div class="cert-link-button">Open <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            
+            <a href="assets/infosys_excel.pdf" target="_blank" class="list-item cert-item-link">
+                <div class="cert-details">
+                    <span class="cert-title"> Successfully completing the course Basic Microsoft Excel Training</span>
+                    <span class="cert-issuer">Infosys | 2025</span>
+                </div>
+                <div class="cert-link-button">Open <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            
+            <a href="assets/misc_cert.pdf" target="_blank" class="list-item cert-item-link">
+                <div class="cert-details">
+                    <span class="cert-title">Misc College Certificates</span>
+                    <span class="cert-issuer"></span>
+                </div>
+                <div class="cert-link-button">Open <i class="fas fa-external-link-alt"></i></div>
+            </a>
 
-  <section style="margin-top:20px">
-    <a class="button" href="resume.pdf" target="_blank">Download Resume (PDF)</a>
-    <a class="button" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub (replace with your username)</a>
-  </section>
+        </div>
+    </section>
 
-  <footer>
-    <p>Site generated from the uploaded resume. Edit <code>index.html</code> to tweak content, add GitHub repo links, or swap colors.</p>
-  </footer>
+    <section id="publications" class="section">
+        <h2 class="section-title">Publications</h2>
+        <div class="list-container">
+            
+            <a href="assets/reseach_paper.pdf" target="_blank" class="list-item cert-item-link">
+                <div class="cert-details">
+                    <span class="pub-title">Cinema Booking System - Research Paper <br></span>
+                    <span class="pub-detail">International Journal of Innovative Reseach | Vol 12, Issue 1, January 2024</span>
+                </div>
+                <div class="cert-link-button">Open <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            
+            <a href="assets/implementation_paper.pdf" target="_blank" class="list-item cert-item-link">
+                <div class="cert-details">
+                    <span class="pub-title">Cinema Booking System - Implementaion Paper <br></span>
+                    <span class="pub-detail">International Journal of Research Publication and Reviews | Vol (5), Issue (4), April (2024)</span>
+                </div>
+                <div class="cert-link-button">Open <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            
+        </div>
+    </section>
+
+    <section id="projects" class="section alt-bg">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <img src="assets/images/project_1.jpg" alt="Project 1 Thumbnail" class="project-thumbnail">
+                <h3>E-commerce Store Frontend</h3>
+                <p>A responsive e-commerce platform built using HTML and styled with CSS.</p>
+                <div class="project-links">
+                    <a href="https://github.com/urjita-9/Project-1-frontend" target="_blank" class="project-button github"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://codesandbox.io/p/sandbox/github/urjita-9/Project-1-frontend" target="_blank" class="project-button demo">Live Demo</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="assets/images/project_2.jpg" alt="Project 2 Thumbnail" class="project-thumbnail">
+                <h3>Cinema Booking System</h3>
+                <p>A full-stack application using HTML, CSS, Node.js, Express, and MongoDB for an attempt replicate Booking websites.</p>
+                <div class="project-links">
+                    <a href="https://github.com/urjita-9/cinema-booking-system" target="_blank" class="project-button github"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://codesandbox.io/p/sandbox/github/urjita-9/cinema-booking-system" target="_blank" class="project-button demo">Live Demo</a>
+                </div>
+            </div>
+
+            <!-- <div class="project-card">
+                <img src="assets/project3.jpg" alt="Project 3 Thumbnail" class="project-thumbnail">
+                <h3>Data Analysis Dashboard</h3>
+                <p>Interactive data visualization dashboard developed with Python, Pandas, and Plotly.</p>
+                <div class="project-links">
+                    <a href="PROJECT3_GITHUB_URL" target="_blank" class="project-button github"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="PROJECT3_DEMO_URL" target="_blank" class="project-button demo">Live Demo</a>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h3 class="timeline-title">B.E. in Computer  Engineering, SPPU</h3>
+                <p class="timeline-subtitle">Keystone School of Engineering, Pune | 2024 – Present</p>
+                <p class="timeline-description">Current CGPA: 8.16.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h3 class="timeline-title">Diploma in Information Technology, MSBTE</h3>
+                <p class="timeline-subtitle">AISSMS Polytechnic, Pune | 2021 – 2024</p>
+                <p class="timeline-description">Achieved 82.19% (First Class with Distinction).</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h3 class="timeline-title">S.S.C (Indian Certificate of Secondary Education)</h3>
+                <p class="timeline-subtitle">St. Helena’s School & Junior College, Pune | 2010 – 2021</p>
+                <p class="timeline-description">Achieved 82%.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section alt-bg">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-lead">I'm currently seeking internships and collaborations. Feel free to reach out via email, phone, or connect with me on social media!</p>
+        
+        <div class="contact-info-details">
+            <p><span><i class="fas fa-envelope"></i> Email:</span> urjitamane@gmail.com</p>
+            <p><span><i class="fas fa-phone"></i> Phone:</span> +91 80106 96256</p>
+            <p><span><i class="fas fa-map-marker-alt"></i> Location:</span> Pune, Maharashtra, India</p>
+        </div>
+
+        <a href="mailto:urjitamane@gmail.com" class="contact-button">Send a Message!</a>
+        
+        <p class="copyright-footer">Designed and Developed by Urjita Mane &copy; 2024</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
